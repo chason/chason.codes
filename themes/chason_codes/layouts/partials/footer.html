@@ -1,0 +1,16 @@
+<footer id="footer">
+    <section class="container">
+    <div>
+    <p class="small">
+    {{ with .Site.Params.copyright }}
+        {{ . | markdownify }}
+    {{ else }}
+        © Copyright {{ now.Format "2006" }} {{ .Site.Params.name }}
+    {{ end }}
+    </p>
+    </div>
+    <div class="subscribe">
+	<a href="/index.xml"><img src="/img/feed.svg" height="20" width="20"/>Subscribe</a>
+    </div>
+    </section>
+</footer>

@@ -1,0 +1,13 @@
+<nav>
+    <div class="logo">
+        <a href="https://chason.codes/"><h1 class="brand">chason.codes</h1></a>
+        <div class="subtitle">
+            chason chaffin, internet thousandaire
+        </div>
+    </div>
+    <ul class="navigation-list">
+        {{ range .Site.Menus.main }}
+            <a href='{{ .URL }}'>{{ .Name }}</a>
+        {{ end }}
+    </ul>
+</nav>

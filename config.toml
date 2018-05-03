@@ -1,0 +1,34 @@
+baseURL = "http://chason.codes/"
+languageCode = "en-us"
+title = "Chason Codes"
+theme = "chason_codes"
+copyright = "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License."
+enableEmoji = "true"
+enableRobotsTXT = "true"
+
+[outputs]
+  home = [ "HTML", "JSON", "RSS" ]
+
+[params]
+  name = "Chason Chaffin"
+  author = "Chason Chaffin"
+  author_url = "https://chason.codes/"
+  description = "chason chaffin, internet thousandaire"
+
+[author]
+  name = "Chason Chaffin"
+  email = "chason@chason.codes"
+
+[permalinks]
+  post = "/:year/:month/:slug/"
+
+[[menu.main]]
+  name = "Posts"
+  weight = -110
+  url = "/posts/"
+
+[[menu.main]]
+  name = "About"
+  weight = -100
+  identifier = "about"
+  url = "/about/"
